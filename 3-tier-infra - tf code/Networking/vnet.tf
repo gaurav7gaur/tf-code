@@ -6,6 +6,7 @@ resource "azurerm_virtual_network" "vnet" {
   
 }
 
+/*
 resource "azurerm_subnet" "application-gateway-subnet" {
   name                 = var.ag-subnet_name
   resource_group_name = var.rg_name
@@ -46,3 +47,4 @@ resource "azurerm_subnet" "firewall-subnet" {
   address_prefixes     = var.firewall-subnet_address
   
 }
+*/

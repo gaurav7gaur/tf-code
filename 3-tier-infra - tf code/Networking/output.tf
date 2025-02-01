@@ -1,4 +1,10 @@
-output "frontend-subnet-id" {
+output "vnet_name" {
+  value = azurerm_virtual_network.vnet.name
+    description = "value of the vnet name"
+  
+}
+
+/*output "frontend-subnet-id" {
   value = azurerm_subnet.frontend-subnet.id
     description = "value of the frontend subnet id"
 }
@@ -44,3 +50,4 @@ output "firewall-subnet-id" {
     description = "value of the firewall subnet id"
   
 }
+*/

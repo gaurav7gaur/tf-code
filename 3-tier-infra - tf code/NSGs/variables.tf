@@ -1,4 +1,4 @@
-variable "frontend-nsg_name" {
+/*variable "frontend-nsg_name" {
   description = "Name of the network security group"
   type        = string
   default     = "nsg"
@@ -11,6 +11,13 @@ variable "backend-nsg_name" {
   
 }
 variable "db-nsg_name" {
+  description = "Name of the network security group"
+  type        = string
+  default     = "nsg"
+  
+}*/
+
+variable "nsg-name" {
   description = "Name of the network security group"
   type        = string
   default     = "nsg"
@@ -31,6 +38,14 @@ variable "rg_name" {
   
 }
 
+variable "subnet-id" {
+  description = "ID of the subnet"
+  type        = string
+  
+}
+
+
+/*
 variable "frontend-subnet_id" {
   description = "ID of the subnet"
   type        = string
@@ -46,3 +61,4 @@ variable "db-subnet_id" {
   type        = string
   
 }
+*/

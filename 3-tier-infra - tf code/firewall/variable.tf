@@ -31,3 +31,17 @@ variable "subnet_id" {
   type        = string
   
 }
+
+variable "sku-name" {
+  description = "SKU name of the firewall"
+  type        = string
+  default     = "AZFW_VNet"
+  
+}
+
+variable "sku-tier" {
+  description = "SKU tier of the firewall"
+  type        = string
+  default     = "Standard"
+  
+}

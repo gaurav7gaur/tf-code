@@ -1,3 +1,18 @@
+resource "azurerm_network_security_rule" "rule" {
+  name                        = var.name
+  priority                    = var.priority
+  direction                   = var.direction
+  access                      = var.access
+  protocol                    = var.protocol
+  source_port_range           = var.source_port_range
+  destination_port_range      = var.destination_port_range
+  source_address_prefix       = var.source_address_prefix
+  destination_address_prefix  = var.destination_address_prefix
+  resource_group_name         = var.rg_name
+  network_security_group_name = var.nsg-name
+}
+
+/*
 resource "azurerm_network_security_rule" "frontend-rule1" {
   name                        = "ag-to-frontend-vm-port80"
   priority                    = 130
@@ -110,3 +125,5 @@ resource "azurerm_network_security_rule" "db-rule2" {
   resource_group_name         = var.rg_name
   network_security_group_name = var.db-nsg-name
 }
+
+*/

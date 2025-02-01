@@ -22,18 +22,29 @@ variable "rg_name" {
 variable "admin_username" {
     description = "Admin username for the virtual machine"
     type        = string
-    default     = "admin"
   
 }
 variable "admin_password" {
     description = "Admin password for the virtual machine"
     type        = string
-    default     = "Password1234!"
   
 }
+/*
 variable "nic-id" {
     description = "ID of the network interface"
     type        = string
     default     = "nic"
+  
+}
+*/
+variable "subnet-id" {
+    description = "ID of the subnet"
+    type        = string  
+}
+
+variable "pip-id" {
+    description = "ID of the public IP"
+    type        = string
+    default     = ""
   
 }
